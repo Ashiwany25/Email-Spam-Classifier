@@ -1,0 +1,22 @@
+name: Train spam classifier
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -r requirements.txt
+      - run: python train.py
+      - name: Smoke test
+        run: |
+          python - <<'PYTEST'
+          import joblib
+          m = joblib.load('models/spam_pipeline.joblib')
+          assert len(m.predict(['Hello, are we meeting today?'])) == 1
+          PYTEST
