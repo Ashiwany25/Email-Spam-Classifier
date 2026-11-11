@@ -424,7 +424,6 @@ This project demonstrates practical experience in:
 
 ## 🙏 Acknowledgements
 
-- [CampusX SMS Spam Classifier](https://github.com/campusx-official/sms-spam-classifier) — reference and inspiration
 - [UCI Machine Learning Repository](https://archive.ics.uci.edu/) — dataset source
 - [Scikit-learn](https://scikit-learn.org/) — machine learning tools
 - [Streamlit](https://streamlit.io/) — application framework
