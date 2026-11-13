@@ -429,10 +429,8 @@ This project demonstrates practical experience in:
 - [Streamlit](https://streamlit.io/) — application framework
 
 ---
-
-## 👨‍💻 Developer
-
 <div align="center">
+## 👨‍💻 Developer
 
 ### Ashiwany Kumar
 
